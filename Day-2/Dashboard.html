@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+           
+        }
+        .my-header{
+            margin: 0px;
+            padding:0px;
+            height:70px;
+            background-color: blue;
+            width: 100%;
+        }
+         #new{
+            position:absolute;
+            top:-10px;
+            padding:10px;
+            right:0px;
+            justify-content:left;
+            text-align: left;
+            margin:2px;
+            color:white;   
+        }
+        img.main-logo{
+            margin:0px 40px 0px 0px;
+            padding:20px;
+            width:200px;
+            height:40px;
+        }
+        
+        .my-navbar {
+            margin:0px;
+            padding:10px;
+            background-color: rgb(72, 72, 249);
+            height:30px;
+        
+
+        }
+        ul#my-list li{
+            display: inline;
+            text-transform:uppercase; 
+            gap:50px;
+            padding: 10px;
+            
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        p{  
+            margin-top:-20px;
+            right: 0px;
+        }
+        .card-box{
+            margin:0px;
+            padding:30px;
+            width:auto;
+            height:500px;
+            background-color:#e8ecef;
+            display: flex;
+            gap:100px;
+            position: relative;
+        
+        }
+        .item-1{
+            background-color: lightgreen;
+            width:300px;
+            height:150px;
+            border-radius:5px;
+            text-align:center;
+        }
+        .item-2{
+            background-color: rgb(137, 114, 239);
+            width:300px;
+            height:150px;
+            border-radius: 5px;
+            text-align: center;
+        
+        }
+        .item-3{
+            background-color: rgb(248, 136, 222);
+            width:300px;
+            height:150px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .item-4{
+            background-color: rgb(249, 119, 119);
+            width:300px;
+            height:150px;
+            border-radius: 5px;
+            text-align:center;
+        }
+        footer{
+            background-color: rgb(251, 251, 253);
+            position:fixed;
+            height:50px;
+            width:100%; 
+            text-align:center; 
+            bottom: 0%;  
+        }
+        .container-class{
+            text-align:left;
+            position:absolute;
+            margin-top:200px;
+            padding-right: 10px;
+            padding-left: 10px;
+            background-color:white;
+            height:200px;
+            width:95%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius:5px;
+            
+        }
+        .box-img{
+            padding:30px;
+            width:300px;
+            height:150px;
+        }
+        .text-class{
+            margin-left:10px;
+            margin-bottom:100px;
+            margin-top: 40px;
+
+        }
+        h3{
+            margin-bottom:30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="my-header">
+    <img  class ="main-logo"src="sysfore-logo-2020.svg" alt="logo">
+    <div id="new">
+        <h3>Mahalakshmi</h3>
+        <p>Hello Welcome!!</p>
+    </div>
+    </div>
+    <nav class="my-navbar">
+        <ul id="my-list">
+            <li><a href="#">Dashboard </a></li>
+            <li><a href="#">profile</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Report</a></li>
+            <li><a href="#">Setting</a></li>
+            <li><a href="#">Helpcenter</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main class="main-class">
+        <div class="card-box">
+            <div class="item-1">
+                <h2>Dashboard item-1</h2>
+                <h1>28</h1>
+            </div>
+            <div class="item-2"><h2>Dashboard item-1</h2><h1>45</h1></div>
+            <div class="item-3"><h2>Dashboard item-1</h2><h1>145</h1></div>
+            <div class="item-4"><h2>Dashboard item-1</h2><h1>120</h1></div>
+            <div class="container-class">
+            <img class="box-img"  src="newback.jpg" alt="picture">
+            <div class="text-class">
+            <h3>My heading</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente dicta hic laudantium pariatur perspiciatis nobis odit, nesciunt repudiandae consequatur laboriosam. Non veniam iusto error provident rerum eaque doloribus nihil, hic inventore dicta tempore nostrum, saepe repudiandae iste consequuntur velit! Unde nemo nisi provident cumque quos beatae ab ex repudiandae error libero reprehenderit odit at consectetur animi nam amet aperiam excepturi est vel, corporis maxime ut. Accusamus quibusdam vero tempore animi similique. Quis culpa vitae ut sed eveniet ipsum voluptatibus? </p></div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>This is a footer</span>
+    </footer>
+</body>
+</html>

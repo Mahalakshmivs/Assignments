@@ -1,0 +1,56 @@
+body{
+    font-size:15px;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("login-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    margin:auto;
+    margin-top:100px;
+    width:200px;
+    height:20px;
+    
+}
+.myform{
+    width:400px;
+    margin:auto;
+    margin-top:70px;
+    height:auto;
+    background-color:white;
+    padding:40px;
+}
+.form-content{
+    display:grid;
+    margin-top:30px;
+}
+label{
+    display:block;
+    margin-bottom: 10px;
+    font-size:20px;
+    font-weight:bolder;
+}
+input{
+    padding:15px;
+    margin-bottom:20px;
+}
+button{
+    padding: 15px;
+    margin-top:20px;
+    background-color: orangered;
+    border: none;
+    color:white;
+}
+.formheader{
+    margin-top:-25px;
+    
+}
+h4{
+    margin-top:-10px;
+    color:gray;
+}
+.sub{
+    background-color: orangered;
+}

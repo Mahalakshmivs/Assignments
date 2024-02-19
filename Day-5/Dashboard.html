@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+    body{
+        margin:0px;
+        box-sizing: border-box;
+        background-color:#e8ecef;
+    }
+    .main-logo{
+        margin-top:20px;
+        width:200px;
+        height:40px;
+    }
+    .headerclass{
+        background-color: blue;
+        height:80px;
+    }
+    p{
+        margin-top:-20px;
+    }
+    .profilelogo{
+        width:40px;
+        height:40px;
+        position: absolute;
+        border-radius: 50%;
+        margin-right:140px;
+        right:0%;
+        margin-top:-50px;
+        padding:10px;
+    }
+    .heading{
+        top:-5px;
+        padding:10px;
+        margin-right:20px;
+        position:absolute;
+        right:0px;
+        width:auto;
+        color: white;
+    }
+    .nav-bar{
+        margin-top:-10px;
+        height:60px;
+        background-color:white;
+        padding:10px;
+        padding-left:30px;
+        
+    }
+    .formcontainer{
+        background-color: white;
+        width:90%;
+        height:auto;
+        border-radius: 5px;
+        margin:auto;
+        margin-top:40px;
+        padding:30px;
+         
+    }
+    .details{
+        margin-top:-10px;
+    }
+    .formcontainer input{
+        padding:10px;
+        width: 150%;
+
+    }
+    .inline{
+        display:grid;
+        grid-template-columns:repeat(4,120px);
+        padding:30px 50px ;
+        column-gap: 15rem;
+        justify-content: start;
+        align-items: center;
+        font-size:18px;
+        font-weight: bolder;  
+    }
+    .inline input{
+        margin-top:5px;
+        margin-bottom:20px;
+    
+    }
+    .fields{
+        display:flex;
+        flex-direction:column;
+        font-size:18px;
+        font-weight: bolder;
+    }
+    .fields select{
+        width:170%;
+        padding:10px;
+        margin-bottom: 40px;
+
+    }
+    .fields label{
+        padding-bottom:5px;
+    }
+
+    footer{
+            background-color: rgb(251, 251, 253);
+            position:fixed;
+            height:50px;
+            width:100%; 
+            text-align:center; 
+            bottom: 0%;  
+        }
+        .refresh{
+            background-color: gray;
+            color: white;
+    
+        }
+        .sub{
+            background-color: orange;
+            color: white;
+            
+        
+        }
+        .formcontainer textarea{
+            height:90px;
+            width:1060%;
+            margin-bottom:80px;
+
+        }
+        .flex-container{
+            display:flex;
+            gap:50px;
+            width:100%;
+            margin-left:760px ;
+            justify-content: end;
+            margin-top:150px;
+        }
+    </style>    
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="headerclass">
+        <img class="main-logo" src="sysfore-logo-2020.svg" alt="logo">
+        <div class="profile">
+            <img  class="profilelogo" src="profile.svg" alt="logo">
+        <div class="heading">
+            <h3>Mahalakshmi</h3>
+            <p>Welcome!</p>
+        </div>
+        </div>
+        </div>
+        <nav class="nav-bar">
+        <div class="details">
+            <h1>Profile Info</h1>
+            <p>fill in your deatils</p>
+        </div>
+        </nav>
+    </div>
+</header> 
+    <main>
+     <div class="formcontainer">
+          <form  id="myform" action="formdeatils.html"  method="POST"  class="inline" >
+         <!-- fname -->
+        <div class="fields">
+            <label>Firstname</label>
+            <input type="text" name="name" id="fname" required>
+        </div>
+        <!-- lname -->
+         <div class="fields">
+            <label>Lastname</label>
+            <input type="text"  name="lastname"  id="lname" required>
+        </div>
+        <!-- middle name -->
+        <div class="fields">
+            <label>Middle name</label>
+            <input type="text"  name="middlename"    id="mname"  required>
+        </div>
+        <!-- dob -->
+        <div class="fields">
+            <label>Date of birth</label>
+            <input type="date" id="dateof" name="dob"  required>
+        </div>
+        <!-- <div class="seconddiv"> -->
+        <!-- email -->
+        <div class="fields">
+            <label>E-mail</label>
+            <input type="email" id="eemail" name="email"  required>
+        </div>
+        <!-- phone number -->
+        <div class="fields">
+            <label>Phone number</label>
+            <input type="number" id="ph" name="ph"  required>
+        </div>
+     
+        <!-- gender -->
+        <div class="fields">
+            <label>Gender</label>
+            <select name="Gender" id="gen"  required>
+                <option value="none">--Select Gender--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <!-- blood group -->
+        <div class="fields">
+            <label>Blood Group</label>
+            <select name="Blood group" id="blood"  required>
+                <option value="none">--Select blood group--</option>
+                <option value="O+ve">O+ve</option>
+                <option value="O-ve">O-ve</option>
+                <option value="AB-ve">AB-ve</option>
+                <option value="AB+ve">AB+ve</option>
+                <option value="B-ve">B-ve</option>
+            </select>
+        </div>
+        <!-- comments -->
+        <div class="comments-container">
+            <label>Comments</label>
+            <textarea  name="text" rows="4" cols="150" id="text"  required></textarea>
+      </div>
+      <!-- buttons -->
+      <div class="flex-container">
+        <div class="btn-class">
+            <input  class="refresh" type="button" value="Refresh" onclick="myrefresh()">
+        </div>
+        <div class="btn-class">
+           <input  class="sub" type="submit" value="submit" onclick="mydisplay()">
+        </div>
+    </div>
+
+    </div>
+    </form>
+    </main>
+    <footer>
+        <h6>© 2004 -2024Sysfore Technologies Pvt. Ltd. All Rights Reserved<h6>
+    </footer>
+
+<script>
+   
+    function myrefresh(){
+        document.getElementById('myform').reset();
+    }
+
+    function mydisplay(){
+        const firstname=document.getElementById("fname").value; 
+        const lastname=document.getElementById("lname").value; 
+        const middlename=document.getElementById("mname").value;
+        const dob=document.getElementById("dateof").value; 
+        const email=document.getElementById("eemail").value; 
+        const phno=document.getElementById("ph").value; 
+        const gender=document.getElementById("gen").value; 
+        const bloodgroup=document.getElementById("blood").value; 
+        const comments=document.getElementById("text").value; 
+
+        sessionStorage.setItem("FirstName" ,firstname);
+        sessionStorage.setItem("LastName" ,lastname);
+        sessionStorage.setItem("MiddleName" ,middlename);
+        sessionStorage.setItem("Date-of-Birth" ,dob);
+        sessionStorage.setItem("E-mail" ,email);
+        sessionStorage.setItem("Phone Number" ,phno);
+        sessionStorage.setItem("Gender" ,gender);
+        sessionStorage.setItem("Blood Group" ,bloodgroup);
+        sessionStorage.setItem("Comments" ,comments);
+        return;
+
+    }
+   
+</script>
+</body>
+</html>
